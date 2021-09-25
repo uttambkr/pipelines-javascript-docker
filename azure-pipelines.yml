@@ -1,5 +1,5 @@
 trigger:
-        - main
+        - master
 
         pool:
           vmImage: 'ubuntu-latest' # set to windows-latest or another Windows vmImage for Windows builds
@@ -14,3 +14,4 @@ trigger:
             repository: $(imageName)
             command: build
             Dockerfile: app/Dockerfile
+            
